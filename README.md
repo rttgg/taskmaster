@@ -16,10 +16,19 @@ with NoSQL
  # Link to deployed application on S3
  http://demodev.us-west-2.elasticbeanstalk.com/taskmaster/tasks
  
+ 
+Get All tasks
+ GET http://demodev.us-west-2.elasticbeanstalk.com/taskmaster/tasks
+ 
+ ## Links to Back End Routes
+ GET route: /taskmaster/tasks - returns task data in JSON format
+ POST route: /taskmaster/tasks
+ PUT route: /taskmaster/tasks/{taskid}/state
+ 
+ 
 # Screenshot
 
  ![screenshot for the application](../taskmaster/assets/screenshot.png)
- 
  
  
  # To Run:
