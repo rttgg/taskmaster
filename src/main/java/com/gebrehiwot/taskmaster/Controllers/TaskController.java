@@ -19,10 +19,7 @@ public class TaskController {
     @Autowired
     TaskRepository taskRepository;
 
-    @GetMapping("/")
-    public String getHome(){
-        return "index";
-    }
+
 
     @GetMapping("/tasks")
     public List<Task> getTasks(){
