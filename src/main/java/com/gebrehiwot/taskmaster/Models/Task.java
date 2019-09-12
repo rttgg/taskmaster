@@ -81,11 +81,11 @@ public class Task {
 
 
     @DynamoDBAttribute
-    public ArrayList getHistory() {
-        return history;
+    public ArrayList<History> getHistory() {
+        return this.history;
     }
 
-    public void setHistory(ArrayList history) {
+    public void setHistory(ArrayList<History> history) {
         this.history = history;
     }
 
