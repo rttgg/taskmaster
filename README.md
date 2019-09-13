@@ -19,9 +19,7 @@ with NoSQL
  # Link to the frontend
  http://roman-taskmaster-frontend.s3-website-us-west-2.amazonaws.com/
  
- 
-Get All tasks
- GET http://demodev.us-west-2.elasticbeanstalk.com/taskmaster/tasks
+ http://demodev.us-west-2.elasticbeanstalk.com/taskmaster/tasks
  
  ## Links to Back End Routes
   - GET route: /taskmaster/tasks - returns task data in JSON format
