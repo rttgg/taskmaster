@@ -16,6 +16,9 @@ with NoSQL
  # Link to deployed application on S3
  http://demodev.us-west-2.elasticbeanstalk.com/taskmaster/tasks
  
+ # Link to the frontend
+ http://roman-taskmaster-frontend.s3-website-us-west-2.amazonaws.com/
+ 
  
 Get All tasks
  GET http://demodev.us-west-2.elasticbeanstalk.com/taskmaster/tasks
