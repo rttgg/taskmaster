@@ -29,13 +29,6 @@ public class TaskController {
         return (List) taskRepository.findAll();
     }
 
-//    @PostMapping("/tasks")
-//    public Task addNewTask(@RequestBody Task task){
-//        Task t = new Task(task.getId(), task.getTitle(), task.getDescription(), "Available", "none");
-//        historySetter(t);
-//        taskRepository.save(t);
-//        return t;
-//    }
 
 
     @GetMapping("/users/{name}/tasks")
