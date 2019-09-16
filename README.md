@@ -13,6 +13,13 @@ with NoSQL
 -Verify your endpoints with Postman (or similar) 
  to ensure they are working as expected
  
+- This ability should be at a route like POST /tasks/{id}/images. 
+(This means it only needs to work for existing tasks, not as part of the
+ initial creation of a task.)
+- Your server should programmatically upload this image to S3.
+- Your server should store the image URL (on S3) somewhere in its database, associated with the task.
+- Fetching a single task (at GET /tasks/{id}) should also include the image URLs associated with that image.
+
  # Link to deployed application on S3
  http://demodev.us-west-2.elasticbeanstalk.com/taskmaster/tasks
  

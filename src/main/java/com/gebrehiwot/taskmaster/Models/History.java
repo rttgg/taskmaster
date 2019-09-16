@@ -2,6 +2,7 @@ package com.gebrehiwot.taskmaster.Models;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
 
+import java.util.Date;
 
 
 @DynamoDBDocument
@@ -11,8 +12,8 @@ public class History {
 
     public History(){}
 
-    public History(String date, String action){
-        this.date = date;
+    public History(String action){
+        this.date = new Date().toString();
         this.action = action;
     }
 
