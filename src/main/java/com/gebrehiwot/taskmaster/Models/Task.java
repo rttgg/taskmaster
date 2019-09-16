@@ -17,17 +17,21 @@ public class Task {
     private String status;
     private String assignee;
     private ArrayList<History> history;
+    private String pic;
 
     public Task(){}
 
-    public Task(String id, String title, String description, String status, String assignee){
-        this.id = id;
+    public Task( String title, String description, String assignee){
+//        this.id = id;
         this.title = title;
         this.description = description;
-        this.status = status;
+        this.status = "available";
         this.assignee = assignee;
         this.history = new ArrayList<>();
+        this.pic = "";
     }
+
+
 
 
     @DynamoDBHashKey
@@ -91,5 +95,14 @@ public class Task {
 
     public void addHistory(History h){
         history.add(h);
+    }
+
+    @DynamoDBAttribute
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
     }
 }
